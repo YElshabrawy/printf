@@ -25,6 +25,7 @@ int _printf(const char *format, ...);
 int parser(const char *format, format_t func_list[], va_list);
 int print_char(va_list);
 int print_str(va_list);
+int print_Str(va_list);
 int print_mod(va_list);
 int print_int(va_list);
 int print_unsigned_int(va_list);

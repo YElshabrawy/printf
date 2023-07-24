@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 		{"o", print_oct},
 		{"p", print_addr},
 		{"R", print_rot13},
+		{"S", print_Str},
 	/*{"r", print_rev},*/ /** Error: seg fault */
 				{"x", print_he_x},
 				{"X", print_he_X},
