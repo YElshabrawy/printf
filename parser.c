@@ -3,8 +3,8 @@
 /**
  * parser - prints
  * @format: ..
- * @func_list: ..
- * @arg_list: ..
+ * @func_list: ...
+ * @arg_list: ...
  * Return: int
 */
 int parser(const char *format, format_t func_list[], va_list arg_list)

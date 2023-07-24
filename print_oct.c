@@ -4,7 +4,7 @@
  * print_oct_help - prints
  * @num: ..
  * @ptr: ..
- * Return: ..
+ * Return: ...
 */
 void print_oct_help(unsigned int num, int *ptr)
 {
