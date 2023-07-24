@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_unsigned_int - prints
- * @arg: ..
+ * @arg: ...
  * Return: ..
 */
 int print_unsigned_int(va_list arg)
