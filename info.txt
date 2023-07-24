@@ -1,0 +1,26 @@
+%% => print a percent sign
+%c => print a single character
+%s => print a string of characters
+
+%d => print a decimal number
+%i => print an integer in base 10 (decimal)
+
+%b => print a binary number
+
+%u => print unsigned integer
+%o => print a number in base 8
+
+%x => print a hexadecimal in lowercase
+%X => print a hexadecimal in uppercase
+
+
+
+%S => print a string with hex values of non-visible characters
+
+%e => print an exponential floating-point number
+%r => prints a reversed string
+%R => prints the Rot13 interpretation of a string
+
+%f => print a floating-point number
+
+
