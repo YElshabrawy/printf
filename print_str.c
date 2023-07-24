@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * print_str - prints
+ * @arg: ..
+ * Return: ..
+*/
 int print_str(va_list arg)
 {
 	int i = 0;

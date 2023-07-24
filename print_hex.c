@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * hex_check - prints
+ * @n: ..
+ * @x: ..
+ * Return: int
+*/
 int hex_check(int n, char x)
 {
 	char *he_x = "abcdef";
@@ -12,6 +18,11 @@ int hex_check(int n, char x)
 		return (He_x[n]);
 }
 
+/**
+ * print_he_x - prints
+ * @arg: ..
+ * Return: int
+*/
 int print_he_x(va_list arg)
 {
 	unsigned int num;
@@ -53,7 +64,11 @@ int print_he_x(va_list arg)
 	free(hex_str);
 	return (len);
 }
-
+/**
+ * print_he_X - prints
+ * @list: ..
+ * Return: int
+*/
 int print_he_X(va_list list)
 {
 	unsigned int num;

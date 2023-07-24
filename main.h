@@ -8,6 +8,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct format - format of struct
+ * @ch: char representing the data type
+ * @f: func ptr that prints according to symbol
+*/
 typedef struct format
 {
 	char *ch;

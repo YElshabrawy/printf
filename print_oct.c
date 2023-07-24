@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_oct_help - prints
+ * @num: ..
+ * @ptr: ..
+ * Return: ..
+*/
 void print_oct_help(unsigned int num, int *ptr)
 {
 	unsigned int rem;
@@ -15,6 +21,11 @@ void print_oct_help(unsigned int num, int *ptr)
 	(void) (*ptr)++;
 }
 
+/**
+ * print_oct - prints
+ * @arg: ..
+ * Return: ..
+*/
 int print_oct(va_list arg)
 {
 	unsigned int num;

@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print_hexa_ptr - prints hexa ptr
+ * @num: ..
+ * @p: ..
+ * Return: void
+*/
 
 void print_hexa_ptr(unsigned long int num, int *p)
 {
@@ -18,6 +24,12 @@ void print_hexa_ptr(unsigned long int num, int *p)
 	(void) (*p)++;
 }
 
+/**
+ * print_hex_p - prints
+ * @ap: ..
+ * Return: int
+*/
+
 int print_hex_p(va_list ap)
 {
 	unsigned long int n;
@@ -28,6 +40,12 @@ int print_hex_p(va_list ap)
 
 	return (len);
 }
+
+/**
+ * print_addr - prints
+ * @arg: ..
+ * Return: int
+*/
 
 int print_addr(va_list arg)
 {

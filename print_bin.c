@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_bin - prints
+ * @arg: ..
+ * Return: int
+*/
+
 int print_bin(va_list arg)
 {
 	int num, i, len;
@@ -38,6 +44,3 @@ int print_bin(va_list arg)
 
 	return (len);
 }
-
-
-

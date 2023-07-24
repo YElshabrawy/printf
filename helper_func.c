@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * rev_str - prints
+ * @str: ..
+ * Return: str
+*/
 char *rev_str(char *str)
 {
 	int i, len;
@@ -15,7 +19,12 @@ char *rev_str(char *str)
 
 	return (str);
 }
-
+/**
+ * base_len - prints
+ * @num: ..
+ * @base: ..
+ * Return: int
+*/
 int base_len(unsigned int num, int base)
 {
 	int i;
@@ -25,7 +34,11 @@ int base_len(unsigned int num, int base)
 
 	return (i);
 }
-
+/**
+ * print_base - prints
+ * @str: ..
+ * Return: void
+*/
 void print_base(char *str)
 {
 	int i;

@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_int - prints
+ * @arg: ..
+ * Return: int
+*/
 int print_int(va_list arg)
 {
 	int n = va_arg(arg, int);

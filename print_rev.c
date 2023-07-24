@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * print_rev - prints
+ * @arg: ..
+ * Return: ..
+*/
 int print_rev(va_list arg)
 {
 	int len;

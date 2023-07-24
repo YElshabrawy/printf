@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+ * print_unsigned_int - prints
+ * @arg: ..
+ * Return: ..
+*/
 int print_unsigned_int(va_list arg)
 {
 	unsigned int num = va_arg(arg, unsigned int);

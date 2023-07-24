@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * parser - prints
+ * @format: ..
+ * @func_list: ..
+ * @arg_list: ..
+ * Return: int
+*/
 int parser(const char *format, format_t func_list[], va_list arg_list)
 {
 	int printed, i, j, conversion_res;
@@ -41,6 +48,5 @@ int parser(const char *format, format_t func_list[], va_list arg_list)
 			printed++;
 		}
 	}
-
 	return (printed);
 }
