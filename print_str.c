@@ -2,7 +2,7 @@
 /**
  * print_str - prints
  * @arg: ..
- * Return: ..
+ * Return: ...
 */
 int print_str(va_list arg)
 {
