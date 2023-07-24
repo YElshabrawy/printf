@@ -30,6 +30,7 @@ int _printf(const char *format, ...)
 	return (printed);
 }
 
+/*
 int main(void)
 {
 	int len;
@@ -65,3 +66,4 @@ int main(void)
 
 	return (0);
 }
+*/
