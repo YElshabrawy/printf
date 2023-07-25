@@ -7,7 +7,7 @@
 */
 int print_int(va_list arg)
 {
-	int n = va_arg(arg, int);
+	long n = (int)va_arg(arg, int);
 	int len = 0;
 	int digits = 0;
 	int div = 1;
