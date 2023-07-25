@@ -10,9 +10,8 @@
 int main(void)
 {
 	int len, len2;
-	len = _printf("%d", INT_MIN);
-	printf("\n");
-	len2 = printf("%d", INT_MIN);
+	len = _printf("%K\n");
+	len2 = printf("%K\n");
 	printf("\n");
 	printf("%d, %d\n", len, len2);
 	return (0);

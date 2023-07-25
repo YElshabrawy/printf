@@ -35,7 +35,7 @@ int parser(const char *format, format_t func_list[], va_list arg_list)
 				{
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
-					conversion_res += 2;
+					printed += 2;
 				} else
 				{
 					return (-1);
