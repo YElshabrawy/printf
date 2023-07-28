@@ -31,7 +31,6 @@ int print_int(va_list);
 int print_unsigned_int(va_list);
 int print_addr(va_list);
 int print_rot13(va_list);
-/*int print_rev(va_list);*/ /** Error: seg fault */
 
 /** base converter */
 int print_bin(va_list);
