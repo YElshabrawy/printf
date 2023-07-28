@@ -1,30 +1,12 @@
 #include "main.h"
-/**
- * rev_str - prints
- * @str: ..
- * Return: str
-*/
-char *rev_str(char *str)
-{
-	int i, len;
-	char tmp;
 
-	len = strlen(str);
-	for (i = 0; i < len / 2; i++)
-	{
-		tmp = str[i];
-		str[i] = str[len - i - 1];
-		str[len - i - 1] = tmp;
-	}
-
-	return (str);
-}
 /**
- * base_len - prints
- * @num: ..
- * @base: ..
- * Return: int
-*/
+ * base_len - calculates the length of a number in a given base
+ * @num: the number to be converted
+ * @base: the base to which the number is converted
+ *
+ * Return: the length of the number in the given base
+ */
 int base_len(unsigned int num, int base)
 {
 	int i;
@@ -34,11 +16,13 @@ int base_len(unsigned int num, int base)
 
 	return (i);
 }
+
 /**
- * print_base - prints
- * @str: ..
+ * print_base - prints a null-terminated string of digits
+ * @str: the string of digits to be printed
+ *
  * Return: void
-*/
+ */
 void print_base(char *str)
 {
 	int i;

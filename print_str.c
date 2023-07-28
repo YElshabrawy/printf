@@ -1,15 +1,18 @@
 #include "main.h"
+
 /**
- * print_str - prints
- * @arg: ..
- * Return: ...
-*/
+ * print_str - prints a string
+ * @arg: a va_list containing the string to be printed
+ *
+ * Return: the number of characters printed on success, or -1 on failure
+ */
 int print_str(va_list arg)
 {
 	int i = 0;
 	char *string;
 
-	string = va_arg(arg, char*);
+	string = va_arg(arg,
+	char*);
 
 	if (!string)
 		string = "(null)";
@@ -19,12 +22,14 @@ int print_str(va_list arg)
 
 	return (i);
 }
+
 /**
- * print_haxa - prints
- * @n: ..
- * @p: ..
- * Return: ..
-*/
+ * print_haxa - recursively prints the hexadecimal representation of an unsigned integer
+ * @n: the unsigned integer to be printed
+ * @p: a pointer to an integer storing the number of characters printed so far
+ *
+ * Return: void
+ */
 void print_haxa(unsigned int n, int *p)
 {
 	unsigned int rem;
@@ -45,16 +50,17 @@ void print_haxa(unsigned int n, int *p)
 }
 
 /**
- * print_Str - prints
- * @ap: ..
- * Return: ..
-*/
-int print_Str(va_list ap)
+ * print_Str - prints a string, replacing non-printable characters with hexadecimal escape sequences
+ * @arg: a va_list containing the string to be printed
+ *
+ * Return: the number of characters printed on success, or -1 on failure
+ */
+int print_Str(va_list arg)
 {
 	char *str;
 	int i, len = 0, checker;
 
-	str = va_arg(ap, char *);
+	str = va_arg(arg, char *);
 	if (str == NULL)
 		str = "(null)";
 

@@ -1,11 +1,12 @@
 #include "main.h"
-/**
- * print_hexa_ptr - prints hexa ptr
- * @num: ..
- * @p: ..
- * Return: void
-*/
 
+/**
+ * print_hexa_ptr - prints a hexadecimal number in reverse order
+ * @num: the number to be printed
+ * @p: a pointer to an integer that keeps track of the number of digits printed
+ *
+ * Return: void
+ */
 void print_hexa_ptr(unsigned long int num, int *p)
 {
 	unsigned long int rem;
@@ -25,28 +26,29 @@ void print_hexa_ptr(unsigned long int num, int *p)
 }
 
 /**
- * print_hex_p - prints
- * @ap: ..
- * Return: int
-*/
-
-int print_hex_p(va_list ap)
+ * print_hex_p - prints an unsigned long integer in hexadecimal format
+ * @arg: a va_list containing the argument to be printed
+ *
+ * Return: the number of digits printed
+ */
+int print_hex_p(va_list arg)
 {
 	unsigned long int n;
 	int len = 0;
 
-	n = va_arg(ap, unsigned long int);
+	n = va_arg(arg,
+	unsigned long int);
 	print_hexa_ptr(n, &len);
 
 	return (len);
 }
 
 /**
- * print_addr - prints
- * @arg: ..
- * Return: int
-*/
-
+ * print_addr - prints the address of a variable in hexadecimal format
+ * @arg: a va_list containing the argument to be printed
+ *
+ * Return: the number of digits printed
+ */
 int print_addr(va_list arg)
 {
 	int len, i;

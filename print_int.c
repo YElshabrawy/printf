@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_int - prints
- * @arg: ....
- * Return: int
-*/
+ * print_int - prints a signed integer
+ * @arg: a va_list containing the integer to be printed
+ *
+ * Return: the number of characters printed on success, or -1 on failure
+ */
 int print_int(va_list arg)
 {
 	long n = (int)va_arg(arg, int);

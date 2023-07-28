@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_bin - prints
- * @arg: ..
- * Return: int
-*/
-
+ * print_bin - prints an unsigned integer in binary format
+ * @arg: a va_list containing the integer to be printed
+ *
+ * Return: the number of digits printed on success, or -1 on failure
+ */
 int print_bin(va_list arg)
 {
 	int num, i, len;

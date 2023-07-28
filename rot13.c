@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * print_rot13 - prints
- * @arg: ..
- * Return: ..
-*/
+ * print_rot13 - encodes a string using the ROT13 cipher
+ * @arg: a va_list containing the string to be encoded
+ *
+ * Return: the number of characters printed on success, or -1 on failure
+ */
 int print_rot13(va_list arg)
 {
 	int i, x;

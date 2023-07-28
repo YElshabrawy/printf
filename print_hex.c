@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * hex_check - prints
- * @n: ..
- * @x: ..
- * Return: int
-*/
+ * hex_check - returns the hexadecimal character for a given digit
+ * @n: the digit to be converted to hexadecimal
+ * @x: the case of the hexadecimal character ('x' for lowercase, 'X' for uppercase)
+ *
+ * Return: the hexadecimal character corresponding to the digit
+ */
 int hex_check(int n, char x)
 {
 	char *he_x = "abcdef";
@@ -19,17 +20,19 @@ int hex_check(int n, char x)
 }
 
 /**
- * print_he_x - prints
- * @arg: ..
- * Return: int
-*/
+ * print_he_x - prints an unsigned integer in lowercase hexadecimal format
+ * @arg: a va_list containing the integer to be printed
+ *
+ * Return: the number of digits printed on success, or -1 on failure
+ */
 int print_he_x(va_list arg)
 {
 	unsigned int num;
 	int len, rem;
 	char *hex_str, *rev_hex;
 
-	num = va_arg(arg, unsigned int);
+	num = va_arg(arg,
+	unsigned int);
 
 	if (num == 0)
 		return (_putchar('0'));
@@ -64,18 +67,20 @@ int print_he_x(va_list arg)
 	free(hex_str);
 	return (len);
 }
+
 /**
- * print_he_X - prints
- * @list: ..
- * Return: int
-*/
-int print_he_X(va_list list)
+ * print_he_X - prints an unsigned integer in uppercase hexadecimal format
+ * @list: a va_list containing the integer to be printed
+ *
+ * Return: the number of digits printed on success, or -1 on failure
+ */
+int print_he_X(va_list arg)
 {
 	unsigned int num;
 	int len, rem;
 	char *hex_str, *rev_hex;
 
-	num = va_arg(list, unsigned int);
+	num = va_arg(arg, unsigned int);
 
 	if (num == 0)
 		return (_putchar('0'));
